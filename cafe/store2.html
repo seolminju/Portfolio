@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="images/logo-favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/store2.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+
+<div class="popupArea">
+    <div class="loginArea">
+        <h2>LOGIN</h2>
+        <form action="" id="loginForm">
+            <input type="text" name="uerId" id="userId" placeholder="아이디">
+            <input type="password" name="uerPassword" id="userPw" placeholder="비밀번호">
+            <input type="submit" value="로그인" id="login">
+        </form>
+        <div>
+            <a href="#">아이디/비밀번호 찾기</a>
+            <a href="#">회원가입</a>
+        </div>
+        <div class="close"></div>
+    </div>
+</div>
+
+<header>
+    <div class="inner">
+        <div class="subGnb">
+            <ul>
+                <li class="login"><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">SNS</a></li>
+                <li class="language"><a href="#">한국어</a>
+                    <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中文</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <div class="mainGnb">
+            <ul class="mainMenu">
+                <li><a href="#">브랜드</a>
+                    <ul class="subMenu">
+                        <li><a href="brand.html">브랜드 소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">메뉴</a>
+                    <ul class="subMenu">
+                        <li><a href="#">신메뉴</a></li>
+                        <li><a href="coffee.html">커피</a></li>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">디저트</a></li>
+                        <li><a href="MD.html">MD</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">매장</a>
+                    <ul class="subMenu">
+                        <li><a href="store1.html">매장찾기</a></li>
+                        <li><a href="store2.html">가맹점 개설문의</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트 & 소식</a>
+                    <ul class="subMenu">
+                        <li><a href="event.html">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">멤버십</a>
+                    <ul class="subMenu">
+                        <li><a href="#">멤버십 소개</a></li>
+                        <li><a href="#">멤버십 혜택</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객의 소리</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div class="cateArea">
+        <div class="cateTitle">
+            <h2>STORE</h2>
+        </div>
+        <div class="cateMenu">
+            <ul>
+                <li><a href="store1.html">매장찾기</a></li>
+                <li><a href="store2.html">가맹점 개설 문의</a></li>
+            </ul>
+            <div class="menuProgress">
+                <div class="menuBarInner">
+                    <div class="menuBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inq">
+        <div class="titleBox">쉽고 체계적인 솔루션으로 여러분의 창업을 함께하겠습니다.</div>
+        <form class="inqBox">
+                <div class="division">
+                    <p>구분 <span>*</span></p>
+                    <select>
+                        <option value="창업문의">창업문의</option>
+                        <option value="입점제안">입점제안</option>
+                    </select>
+                </div>
+                <div class="name">
+                    <p>이름 <span>*</span></p>
+                    <input type="text" placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="number">
+                    <p>연락처 <span>*</span></p>
+                    <input type="tel" placeholder="숫자만 입력해주세요.">
+                </div>
+                <div class="store">
+                    <p>점포 유무 <span>*</span></p>
+                    <input type="radio" name="store" value="yes" id="yes">
+                    <label for="yes">유</label>
+                    <input type="radio" name="store" value="no" id="no">
+                    <label for="no">무</label>
+                </div>
+                <div class="area">
+                    <p>창업희망지역 <span>*</span></p>
+                    <select class="area1">
+                        <option value>지역선택</option>
+                        <option value="강원">강원</option>
+                        <option value="경기">경기</option>
+                        <option value="경남">경남</option>
+                        <option value="경북">경북</option>
+                        <option value="광주">광주</option>
+                        <option value="대구">대구</option>
+                        <option value="대전">대전</option>
+                        <option value="부산">부산</option>
+                        <option value="서울">서울</option>
+                        <option value="세종">세종</option>
+                        <option value="울산">울산</option>
+                        <option value="인천">인천</option>
+                        <option value="전남">전남</option>
+                        <option value="전북">전북</option>
+                        <option value="제주">제주</option>
+                        <option value="충남">충남</option>
+                        <option value="충북">충북</option>
+                    </select>
+                    <select class="area2">
+                        <option value>--구 / 군--</option>
+                        <option value="강릉시">강릉시</option>
+                        <option value="고성군">고성군</option>
+                        <option value="동해시">동해시</option>
+                        <option value="삼척시">삼척시</option>
+                        <option value="속초시">속초시</option>
+                        <option value="양구군">양구군</option>
+                        <option value="양양군">양양군</option>
+                        <option value="영월군">영월군</option>
+                        <option value="원주시">원주시</option>
+                        <option value="인제군">인제군</option>
+                        <option value="정선군">정선군</option>
+                        <option value="철원군">철원군</option>
+                        <option value="춘천시">춘천시</option>
+                        <option value="태백시">태백시</option>
+                        <option value="평창군">평창군</option>
+                        <option value="홍천군">홍천군</option>
+                        <option value="화천군">화천군</option>
+                        <option value="횡성군">횡성군</option>
+                    </select>
+                </div>
+                <div class="inqTxt">
+                    <p>문의 내용</p>
+<!--                    <input type="text" id="inqTxt" placeholder="더 궁금하신 내용을 적어주세요.">-->
+                    <TEXTAREA NAME=txtCom COLS=30 ROWS=3 placeholder="더 궁금하신 내용을 적어주세요."></TEXTAREA>
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" id="checkBox">
+                    <label for="checkBox">(필수) 개인정보의 수집 및 이용에 동의하십니까? <a href="#">전문보기</a></label>
+                </div>
+                <div class="button"><button>문의하기</button></div>
+            </form>
+        <div class="process">
+            <div class="titleBox">탐앤탐스 가맹점 개설 절차</div>
+            <div class="processBox">
+                <div class="inner">
+                    <ul class="item">
+                        <li>
+                            <strong>STEP 01</strong>
+                            <p>가맹문의 및 상담</p>
+                        </li>
+                        <li>
+                            <strong>STEP 02</strong>
+                            <p>상권분석</p>
+                        </li>
+                        <li>
+                            <strong>STEP 03</strong>
+                            <p>가맹계약</p>
+                        </li>
+                        <li>
+                            <strong>STEP 04</strong>
+                            <p>설측 및 설계/협의</p>
+                        </li>
+                        <li>
+                            <strong>STEP 05</strong>
+                            <p>개점계약</p>
+                        </li>
+                        <li>
+                            <strong>STEP 06</strong>
+                            <p>인테리어 공사</p>
+                        </li>
+                        <li>
+                            <strong>STEP 07</strong>
+                            <p>직원채용 및 교육</p>
+                        </li>
+                        <li>
+                            <strong>STEP 08</strong>
+                            <p>오픈준비 및 가오픈</p>
+                        </li>
+                        <li>
+                            <strong>STEP 09</strong>
+                            <p>그랜드 오픈</p>
+                        </li>
+                    </ul>
+                    <div class="telNumber">
+                        <strong>본사 대표 번호 02-3412-0781</strong>
+                        <strong>개발팀 담당자 070-7164-7937</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inqArea">
+            <div class="inner">
+                <div class="titleBox">많이 물어보는 질문</div>
+                <ul class="inqAccordion">
+                    <li>
+                        <div class="inqTitle">
+                            <strong>점포를 타인에게 양도, 양수 할 수 있나요?</strong>
+                        </div>
+                        <div class="inqDesc">
+                            양도양수는 본사와 협의하여 진행하여야 합니다.
+                            단, 제 3자 포괄양도양수로 진행되며 양수가맹금(교육비) 금 삼백만원(\3,000,000/부가세별도)과 보증금 금 일천만원(\10,000,000)을 납부해야 되며, 본사의 승인없이 명의변경 하실 경우 가맹계약 해지사유가 됩니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inqTitle">
+                            <strong>상권 보호는 어떻게 설정되어 있나요?</strong>
+                        </div>
+                        <div class="inqDesc">
+                            점주님과 협의하여 상권구역 설정 후 가맹계약서에 별도 첨부하고 있습니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inqTitle">
+                            <strong>점포를 소유하고 있지 않아요</strong>
+                        </div>
+                        <div class="inqDesc">
+                            본사에 접수된 점포를 소개하여 개설에 도움을 드리고 있습니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inqTitle">
+                            <strong>점포를 소유하고 있어요</strong>
+                        </div>
+                        <div class="inqDesc">
+                            상권에 대한 시장조사 및 사업타당성 분석 후 개설가능 여부를 알려드리고 있습니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inqTitle">
+                            <strong>탐앤탐스 입점을 제안하고 싶어요</strong>
+                        </div>
+                        <div class="inqDesc">
+                            retail@tomntoms.com로 자료를 보내주시면 검토 후 연락을 드리겠습니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inqTitle">
+                            <strong>가맹점 오픈 시 본사 지원이 있나요?</strong>
+                        </div>
+                        <div class="inqDesc">
+                            가맹점 오픈 시 기자재 입고일부터 매장담당 슈퍼바이저가 매장에 파견되어 5일간 오픈 지원을 해 드리고 있습니다.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="inner">
+        <div class="topFooter">
+            <div class="logo"></div>
+            <ul>
+                <li><a href="#">가맹점 문의</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+        </div>
+        <div class="btmFooter">
+            <div class="centerNumInfo">
+                <div class="centerNum">
+                    고객센터 02.3412.0781
+                </div>
+                <div class="centerInfo">
+                    <p>운영시간 : 월요일~목요일 (오전 9시 ~ 오후 6시), 금요일 (오전 9시 ~ 오후 1시)</p>
+                    <p>점심시간 : 낮 12시 ~ 오후 1시 / 주말 및 공휴일 휴무</p>
+                </div>
+            </div>
+            <ul class="companyInfo">
+                <li>서울특별시 광진구 아차산로 426</li>
+                <li>대표 : 명선철</li>
+                <li>사업자등록번호 : 215-86-65050</li>
+                <li>개인정보 책임자 : 이동규</li>
+                <li>TEL. 02-3412-0781</li>
+                <li>FAX. 02-546-1907</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
