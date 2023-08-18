@@ -1,0 +1,168 @@
+@import "common.css";
+
+.cateArea .cateTitle {
+    position: relative;
+    background: url("../images/event-back.jpg") no-repeat center/cover;
+}
+.cateArea .cateTitle h2 {
+    height: 230px;
+    font-family: 'GongGothicMedium', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 230px;
+}
+.cateArea .cateMenu {
+    text-align: center;
+}
+.cateArea .cateMenu ul {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+.cateArea .cateMenu ul li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    width: 160px;
+    padding: 12px 0;
+}
+.cateArea .cateMenu ul li a:hover {
+    color: #633B2D;
+}
+.cateArea .cateMenu .menuProgress {
+    height: 5px;
+    background: #E4E4E4;
+}
+.cateArea .cateMenu .menuProgress .menuBarInner {
+    width: 320px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.cateArea .cateMenu .menuProgress .menuBar {
+    width: 160px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+}
+
+.titleBox {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titleBox:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+
+.event {
+    padding: 80px;
+}
+.event .eventBox {
+    width: 1225px;
+    font-size: 0;
+    margin: 0 auto;
+}
+.event .eventBox .item {
+    width: 395px;
+    height: 338px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.event .eventBox .item:nth-child(3) {
+    margin-right: 0;
+}
+.event .eventBox .item:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-30px);
+}
+.event .eventBox .item img {
+    width: 355px;
+    height: 198px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    display: block;
+}
+.event .eventBox .item .eventTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.event .eventBox .item .eventTxt {
+    font-size: 16px;
+}
+
+
+.titleBox.end {
+    color: #AC2D2D;
+    font-size: 32px;
+    margin-top: 80px;
+}
+.titleBox.end:after {
+    background: #AC2D2D;
+}
+.event .eventEnd {
+    font-size: 0;
+    width: 800px;
+    margin: 0 auto;
+}
+.event .eventEnd .item {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.event .eventEnd .item:hover:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background: url("../images/ico-end.png") no-repeat center / cover;
+}
+.event .eventEnd .item:hover .imgBox:after {
+    background: rgba(0, 0, 0, 0.8);
+}
+.event .eventEnd .item .imgBox {
+    position: relative;
+    width: 355px;
+    height: 198px;
+    margin-bottom: 10px;
+}
+.event .eventEnd .item .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event .eventEnd .item .imgBox:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.event .eventEnd .item p {
+    font-size: 18px;
+    font-weight: 700;
+}

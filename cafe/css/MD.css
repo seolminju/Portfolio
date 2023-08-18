@@ -1,0 +1,146 @@
+@import "common.css";
+@import "menu.css";
+
+
+.cateArea .cateMenu .menuProgress .menuBar {
+    right: 0;
+}
+
+.recommend {
+    width: 990px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.recommend .titleBox {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+.recommend .titleBox:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.recommend .contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 69px;
+    position: relative;
+}
+.recommend .leftContent {
+    width: 480px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.recommend .leftContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recommend .rightContents {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.recommend .rightContents div {
+    width: 229px;
+    height: 229px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.recommend .rightContents div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recommend .rightContents div:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 20px;
+}
+.recommend .txtAni {
+    position: absolute;
+    text-align: center;
+    right: 95px;
+    top: -60px;
+}
+.recommend .txtAni p {
+    font-size: 18px;
+    color: #ababab;
+}
+.recommend .txtAni img {
+    animation: arrowAni 2s linear infinite;
+}
+@keyframes arrowAni {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.menuArea .menuWrap li {
+    padding: 20px;
+}
+.menuArea .menuWrap li .menuTitle {
+    padding: 0;
+    margin-bottom: 8px;
+}
+.menuWrap li .hoverMenu .hoverMenuTitle {
+    margin-top: 50px;
+}
+.menuWrap li .hoverMenu .hoverMenuText {
+    /*margin-bottom: 80px;*/
+}
+.menuWrap li .hoverMenu .hoverMenuText p {
+    line-height: 22px;
+    color: rgba(225, 225, 225, 0.9);
+}
+.menuArea .menuWrap li .hoverMenu .mdMore {
+    position: absolute;
+    width: 263px;
+    bottom: 90px;
+}
+.menuArea .menuWrap li .hoverMenu .mdMore a {
+    display: block;
+    width: 100%;
+    background: #fff;
+    padding: 8px 0;
+    color: #000;
+    font-weight: 700;
+}
+.menuArea .menuWrap li .hoverMenu .mdMore:hover a {
+    background: #d5d5d5;
+}
+.menuArea .menuWrap li:hover .menuImg {
+     margin-top: 0;
+ }
+.menuArea .menuWrap li:hover .menuImg img {
+    transform: scale(1);
+}
+.menuWrap li .hoverMenu .hoverMenuTitle {line-height: 1.2}
