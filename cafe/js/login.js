@@ -1,7 +1,7 @@
 $(function () {
    
-    const id = "himedia";
-    const password = "hi123123";
+    const id = "minju";
+    const password = "010907";
 
     const body = $("body");
     const popup = $(".popupArea");

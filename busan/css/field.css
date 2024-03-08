@@ -1,0 +1,326 @@
+@import "common.css";
+
+
+main {
+    margin-top: 100px;
+}
+main .subMenu {
+    font-family: 'Noto Sans KR', sans-serif;
+    border-bottom: 1px solid #CCD2D9;
+}
+main .subMenu ul {
+    display: flex;
+    text-align: center;
+}
+main .subMenu ul li {
+    flex: 1;
+    padding: 16px 0;
+    transition: 0.3s;
+}
+main .subMenu ul li:hover {
+    background: #E6F4F4;
+    transition: 0.3s;
+}
+main .subMenu ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .subMenu ul li a .icoBox {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 12px;
+}
+main .subMenu ul li a .icoBox img{
+    width: 40px;
+    height: 40px;
+}
+main .subMenu ul li a span{
+    font-size: 14px;
+}
+.sec1 {
+    padding-top: 32px;
+}
+.sec1 .search {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sec1 .search input {
+    width: 550px;
+    height: 45px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #67778C;
+    border-radius: 10px;
+}
+.sec1 .search button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #1B3354;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sec1 .search button:hover {
+    background: #12223a;
+}
+.sec1 .search button img {
+    width: 25px;
+    height: 25px;
+}
+.sec1 .mainBox {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    position: relative;
+}
+.sec1 .mainBox:after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 411px;
+    background: url("../images/busan-txt.png")no-repeat center / cover;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sec1 .mainBox .mainBanner {
+    width: 640px;
+    height: 400px;
+    background: url("../images/busan-banner.jpg") no-repeat center / cover;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+.sec1 .mainBox .notice ul li {
+    width: 530px;
+    padding: 15px 0 15px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #E6E9EC;
+    margin-bottom: 20px;
+}
+.sec1 .mainBox .notice ul li:last-child {
+    margin-bottom: 0;
+}
+.sec1 .mainBox .notice ul li:hover {
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.1);
+}
+.sec1 .mainBox .notice ul li:hover .img {
+    opacity: 1;
+}
+.sec1 .mainBox .notice ul li .img {
+    float: left;
+    margin-right: 60px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+}
+.sec1 .mainBox .notice ul li .txt {}
+.sec1 .mainBox .notice ul li .txt strong {
+    font-size: 18px;
+    font-weight: 600;
+}
+.sec1 .mainBox .notice ul li .txt p {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #4F4F4F;
+}
+
+.sec2 {
+    padding: 70px 0;
+}
+.sec2 h2,
+.sec3 h2 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.sec2 .newsBox {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sec2 .newsBox .boxList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+.sec2 .newsBox .boxList .box {
+    width: 300px;
+    height: 200px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: #FBFBFB;
+    border: 1px solid #E8E8E8;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+}
+.sec2 .newsBox .boxList .box.on {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.8s;
+}
+.sec2 .newsBox .boxList .box.box2 {transition-delay: 0.2s}
+.sec2 .newsBox .boxList .box.box3 {transition-delay: 0.4s}
+.sec2 .newsBox .boxList .box.box4 {transition-delay: 0.6s}
+.sec2 .newsBox .boxList .box.box5 {transition-delay: 0.8s}
+.sec2 .newsBox .boxList .box.box6 {transition-delay: 1s}
+.sec2 .newsBox .boxList .box.box7 {transition-delay: 1.2s}
+.sec2 .newsBox .boxList .box.box8 {transition-delay: 1.4s}
+
+.sec2 .newsBox .boxList .box.bottom {
+    margin-top: 40px;
+}
+.sec2 .newsBox .boxList .box:hover {
+    border: 1px solid #DCECEC;
+    box-shadow: 1px 1px 10px rgba(3, 140, 140, 0.25);
+}
+.sec2 .newsBox .boxList .box p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    position: relative;
+}
+.sec2 .newsBox .boxList .box p:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #038C8C;
+    position: absolute;
+    top: calc(100% + 15px);
+}
+.sec2 .newsBox .boxList .box .newsList li {
+    width: 260px;
+    margin-bottom: 12px;
+}
+.sec2 .newsBox .boxList .box .newsList li:last-child {
+    margin-bottom: 0;
+}
+.sec2 .newsBox .boxList .box .newsList li a {
+    font-size: 14px;
+    color: #464646;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+.sec2 .newsBox .boxList .box .newsList li a:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 15px;
+    background-color: rgba(3, 140, 140, 0.07);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s;
+}
+.sec2 .newsBox .boxList .box .newsList li a:hover:before {
+    width: 100%;
+    transition: 0.2s;
+}
+.sec2 .newsBox .boxList .box .more {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.5s;
+}
+.sec2 .newsBox .boxList .box .more:hover {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.sec2 .newsBox .boxList .box .more a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/more-plus.png")no-repeat center / cover;
+}
+
+.sec3 {
+    padding: 50px 0 100px;
+}
+.sec3 .shortcuts {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    height: 376px;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sec3 .shortcuts .linkList {
+    display: flex;
+    position: relative;
+}
+.sec3 .shortcuts .linkList .list {
+    flex: 1;
+}
+.sec3 .shortcuts .linkList .list button:hover {
+    color: #031473;
+    font-weight: 700;
+}
+.sec3 .shortcuts .linkList .list button.click {
+    font-weight: 700;
+    color: #031473;
+}
+.sec3 .shortcuts .linkList .list button.click:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #031473;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.sec3 .shortcuts .linkList .list button {
+    width: 100%;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+.sec3 .shortcuts .linkList .list .listBox {
+    display: none;
+}
+.sec3 .shortcuts .linkList .list .listBox.active {
+    display: block;
+}
+.sec3 .shortcuts .linkList .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0;
+    width: 1300px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: url("../images/field-back.jpg") no-repeat center/cover;
+    border-top: 1px solid #BFBFBF;
+}
+.sec3 .shortcuts .linkList .list ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #BFBFBF;
+}
+.sec3 .shortcuts .linkList .list ul li a:hover {
+    border-color: #031473;
+}

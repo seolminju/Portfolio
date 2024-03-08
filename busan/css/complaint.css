@@ -1,0 +1,319 @@
+@import "common.css";
+
+.headerMenuArea {
+    position: relative;
+}
+.headerMenuArea .login {
+    position: absolute;
+    right: 200px;
+    top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.headerMenuArea .login a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.sec1 {
+    padding: 30px 0 50px;
+}
+.sec1 .search {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sec1 .search input {
+    width: 550px;
+    height: 45px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #67778C;
+    border-radius: 10px;
+}
+.sec1 .search button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #1B3354;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sec1 .search button:hover {
+    background: #12223a;
+}
+.sec1 .search button img {
+    width: 25px;
+    height: 25px;
+}
+
+.sec1 .mainBanner {
+    width: 100%;
+    height: 360px;
+    background: url("../images/complaint-back.jpg") no-repeat top/cover;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec1 .mainBanner .mainTxt {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    width: 404px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+    overflow: hidden;
+}
+.sec1 .mainBanner .mainTxt p {
+    font-size: 36px;
+    margin-bottom: 10px;
+    animation: txt 0.6s linear;
+}
+.sec1 .mainBanner .mainTxt strong {
+    display: inline-block;
+    font-size: 48px;
+    animation: txt 1s linear;
+}
+@keyframes txt {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+.sec1 .complaintMenu {
+    width: 100%;
+    top: 101px;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #CCD2D9;
+}
+.sec1 .complaintMenu ul {
+    display: flex;
+    height: 50px;
+}
+.sec1 .complaintMenu ul li a {
+    display: inline-block;
+    width: 260px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s;
+}
+.sec1 .complaintMenu ul li a:hover {
+    background-color: #E6F4F4;
+    transition: 0.3s;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .listBox {
+    width: 1000px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+.sec2 .listBox .leftBox {
+    position: relative;
+}
+.sec2 .listBox .leftBox:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 280px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.05);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sec2 .listBox .box {
+    padding: 60px 35px 50px;
+    position: relative;
+}
+.sec2 .listBox .box .txt {
+    margin-bottom: 30px;
+}
+.sec2 .listBox .box .txt strong {
+    font-size: 26px;
+    font-weight: 700;
+}
+.sec2 .listBox .box .txt p {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 15px;
+}
+.sec2 .listBox .leftBox ul {
+    width: 420px;
+}
+.sec2 .listBox .rightBox ul {
+    width: 440px;
+}
+.sec2 .listBox .box ul li {
+    /*width: 420px;*/
+    height: 35px;
+    line-height: 35px;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.sec2 .listBox .box ul li:before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url("../images/ico-compliment-35.png") no-repeat center/cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sec2 .listBox .rightBox ul li:before {
+    background-image: url("../images/complaint-35.png");
+}
+.sec2 .listBox .box ul li a {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #606060;
+}
+.sec2 .listBox .box ul li a:hover,
+.sec2 .listBox .box .more a:hover {
+    text-decoration: underline;
+}
+.sec2 .listBox .box .more {
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    padding-right: 19px;
+}
+.sec2 .listBox .box .more:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 11px;
+    background: url("../images/arrow.png") no-repeat center / cover;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sec2 .menuList {
+    width: 240px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 77px;
+}
+.sec2 .menuList ul li {
+    margin-bottom: 16px;
+}
+.sec2 .menuList ul li:last-child {
+    margin-bottom: 0;
+}
+.sec2 .menuList ul li a {
+    display: block;
+    width: 240px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.25);
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.sec2 .menuList ul li a:hover {
+    border-color: rgba(104, 114, 171, 0.5);
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 2px 4px 6px rgba(104, 114, 171, 0.25);
+}
+
+.sec3 {
+    margin: 100px 0;
+}
+.sec3 .txtBox {
+    text-align: center;
+    height: 250px;
+    background: url("../images/busan-complaint.jpg") no-repeat center / cover;
+    position: relative;
+}
+.sec3 .txtBox:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 250px;
+    background: rgba(53, 58, 63, 0.3);
+    z-index: -1;
+}
+.sec3 .txtBox .txt {
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec3 .listBox {
+    margin-top: 50px;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(127,172,218,1) 0%, rgba(29,44,129,1) 100%);
+}
+.sec3 .listBox .leftBox {}
+.sec3 .listBox .rightBox {}
+.sec3 .listBox div {
+    display: flex;
+    justify-content: space-between;
+}
+.sec3 .listBox div strong {
+    width: 150px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    color: #1D2C81;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+.sec3 .listBox div ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.sec3 .listBox div ul li a {
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sec3 .listBox div ul li a span {
+    position: relative;
+}
+.sec3 .listBox div ul li a span:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+}
+.sec3 .listBox div ul li:hover a span:before {
+    width: calc(100% + 10px);
+    transition: 0.2s;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부산광역시 | 부산소식</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/news.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/news.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="headerMenuArea fixed">
+        <div class="inner">
+            <div>
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="news.html" class="mainMenu choice">부산소식</a>
+                    <ul class="menu">
+                        <li><a href="#">새소식</a></li>
+                        <li><a href="#">부산시보</a></li>
+                        <li><a href="#">보도·해명자료</a></li>
+                        <li><a href="#">공고</a></li>
+                        <li><a href="#">부산시 공식SNS</a></li>
+                        <li><a href="#">시정사진</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="complaint.html" class="mainMenu">민원신청</a>
+                    <ul class="menu">
+                        <li><a href="#">민원신청</a></li>
+                        <li><a href="#">제안신청</a></li>
+                        <li><a href="#">시민참여</a></li>
+                        <li><a href="#">민원안내</a></li>
+                        <li><a href="#">120콜센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mainMenu">정보공개</a>
+                    <ul class="menu">
+                        <li><a href="#">주요시책</a></li>
+                        <li><a href="#">정보공개</a></li>
+                        <li><a href="#">예산</a></li>
+                        <li><a href="#">감사정보</a></li>
+                        <li><a href="#">지방공기업</a></li>
+                        <li><a href="#">계약정보</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="field.html" class="mainMenu">분야별 정보</a>
+                    <ul class="menu">
+                        <li><a href="#">경제</a></li>
+                        <li><a href="#">일자리·교육</a></li>
+                        <li><a href="#">사회복지</a></li>
+                        <li><a href="#">보건·건강</a></li>
+                        <li><a href="#">도시·건축·주택</a></li>
+                        <li><a href="#">안전</a></li>
+                        <li><a href="#">환경보호</a></li>
+                        <li><a href="#">교통·물류</a></li>
+                        <li><a href="#">해양농수산</a></li>
+                        <li><a href="#">행정</a></li>
+                        <li><a href="#">문화체육관광</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mainMenu">부산소개</a>
+                    <ul class="menu">
+                        <li><a href="#">부산의 오늘</a></li>
+                        <li><a href="#">부산의 상징</a></li>
+                        <li><a href="#">부산시청 안내</a></li>
+                        <li><a href="#">부산의 인물</a></li>
+                        <li><a href="#">부산의 역사</a></li>
+                        <li><a href="#">부산통계</a></li>
+                        <li><a href="#">도시브랜드</a></li>
+                        <li><a href="#">주민자치회</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#">로그인 / 회원가입</a>
+        </div>
+    </div>
+
+</header>
+
+<main>
+    <div class="naviBanner">
+        <h3>통합 공지사항</h3>
+        <div class="navi">
+            <a href="#">홈</a>
+            <span class="arrows"></span>
+            <a href="#">부산소식</a>
+            <span class="arrows"></span>
+            <a href="#">새소식</a>
+            <span class="arrows"></span>
+            <a href="#">통합 공지사항</a>
+        </div>
+    </div>
+
+    <section class="container inner">
+        <div class="sideNav">
+            <h2>부산 소식</h2>
+            <ul class="sideMenu">
+                <li class="menuList">
+                    <button class="listTitle">새소식</button>
+                    <ul class="mainList">
+                        <li>
+                            <a href="#">통합 공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">홍보게시판</a>
+                        </li>
+                        <li>
+                            <a href="#">시정영상뉴스</a>
+                        </li>
+                        <li>
+                            <a href="#">전자책</a>
+                        </li>
+                        <li>
+                            <a href="#">공공앱</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menuList">
+                    <button class="listTitle none">부산시보</button>
+                </li>
+                <li class="menuList">
+                    <button class="listTitle">보도·해명자료</button>
+                    <ul class="mainList">
+                        <li>
+                            <a href="#">보도자료</a>
+                        </li>
+                        <li>
+                            <a href="#">해명 · 설명자료</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menuList">
+                    <button class="listTitle">공고</button>
+                    <ul class="mainList">
+                        <li>
+                            <a href="#">채용공고</a>
+                        </li>
+                        <li>
+                            <a href="#">공무원 시험공고</a>
+                        </li>
+                        <li>
+                            <a href="#">입찰공고</a>
+                        </li>
+                        <li>
+                            <a href="#">부산시보 고시공고</a>
+                        </li>
+                        <li>
+                            <a href="#">고시공고</a>
+                        </li>
+                        <li>
+                            <a href="#">입법예고</a>
+                        </li>
+                        <li>
+                            <a href="#">분묘개장공고</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menuList">
+                    <button class="listTitle none">부산시 공식 SNS</button>
+                </li>
+                <li class="menuList">
+                    <button class="listTitle">시정사진</button>
+                    <ul class="mainList">
+                        <li>
+                            <a href="#">시정관련(보도자료) 사진자료</a>
+                        </li>
+                        <li>
+                            <a href="#">테마 갤러리</a>
+                            <button class="subBtn"></button>
+                            <ul class="subList">
+                                <li>
+                                    <a href="#">세계도시 부산</a>
+                                </li>
+                                <li>
+                                    <a href="#">월드컵 부산</a>
+                                </li>
+                                <li>
+                                    <a href="#">부산아시아드경기대회</a>
+                                </li>
+                                <li>
+                                    <a href="#">부산관광사진</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">상징</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="contents">
+            <fieldset class="boardHead">
+                <legend class="blind">목록내 검색</legend>
+                <div class="boardSearchForm">
+                    <span class="cellInDv">
+                        <label for="srchBeginDt" class="blind">검색 시작일</label>
+                            <input type="date"
+                                 id="srchBeginDt"
+                                 max="2024-02-20"
+                                 min="2001-09-07"
+                                 value="2024-01-20">
+                        <span class="hyphen">-</span>
+                        <label for="srchEndDt" class="blind">검색 종료일</label>
+                            <input type="date"
+                               id="srchEndDt"
+                               max="2024-02-20"
+                               min="2001-09-07"
+                               value="2024-02-20">
+					</span>
+                    <span class="srchOption">
+                        <label for="srchKey" class="blind">검색조건 선택</label>
+                        <select id="srchKey" name="srchKey" class="selectForm">
+                            <option value="option1">제목</option>
+                            <option value="option2">내용</option>
+                            <option value="option3">부서명</option>
+                            <option value="option4">작성자</option>
+                        </select>
+                    </span>
+                    <span class="srchKeyword">
+                        <label for="srchText" class="blind">검색어 입력</label>
+                        <input name="srchText" id="srchText" type="search" class="textForm" placeholder="검색어를 입력하세요." value="">
+                        <button><img src="images/search.png" alt=""></button>
+                    </span>
+                </div>
+            </fieldset>
+            <div class="boardListTop">
+                <div class="boardListTxt">
+                    현재 페이지 <strong>1</strong> / 전체페이지 263
+                </div>
+                <div class="shareArea">
+                    <span class="print"><a href="#"></a></span>
+                    <span class="share"><a href="#"></a></span>
+                </div>
+            </div>
+            <table class="boardList">
+                <caption class="blind">통합 공지사항목록 : 번호, 제목, 첨부파일, 부서명, 작성일, 조회수 구성된 표</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>첨부파일</th>
+                        <th>부서명</th>
+                        <th>작성일</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/ico-notice.png" alt=""></td>
+                        <td><a href="#">국민권익위원회 주관 2023년도 종합청렴도 평가 결과, 부산시 종합청렴도 3등급</a></td>
+                        <td></td>
+                        <td>청렴담당관</td>
+                        <td>2024-01-02</td>
+                        <td>496</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ico-notice.png" alt=""></td>
+                        <td><a href="#">홈페이지 마일리지 부여 기준 변경 알림</a></td>
+                        <td></td>
+                        <td>홍보담당관</td>
+                        <td>2023-11-27</td>
+                        <td>1245</td>
+                    </tr>
+                    <tr>
+                        <td>2527</td>
+                        <td><a href="#">반여농산물도매시장 그린데이(1월) 합동 대청소 실시</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>운영팀</td>
+                        <td>2024-01-16</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td>2526</td>
+                        <td><a href="#">2024년 1회차 「우수 환경교육프로그램 지정제」 지정신청 안내</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>환경정책과</td>
+                        <td>2024-01-16</td>
+                        <td>109</td>
+                    </tr>
+                    <tr>
+                        <td>2525</td>
+                        <td><a href="#">동구 청년정책 네트워크 3기 회원 모집</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>일자리경제과</td>
+                        <td>2024-01-16</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>2524</td>
+                        <td><a href="#">2024년도 기간제근로자(구급 대체인력)최종합격자 발표 및 채용후보자 등록 공고</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>소방행정과</td>
+                        <td>2024-01-16</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>2523</td>
+                        <td><a href="#">2024년 1월 납기분 물이용부담금 부과율(확정단가) 알림</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>요금감사팀</td>
+                        <td>2024-01-16</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>2522</td>
+                        <td><a href="#">2024년 2월 구덕운동장 정기주차(월주차) 신청접수 안내</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>구덕운동장</td>
+                        <td>2024-01-16</td>
+                        <td>617</td>
+                    </tr>
+                    <tr>
+                        <td>2521</td>
+                        <td><a href="#">아파트 화재 피난안전 매뉴얼 및 우리아파트 피난계획 세우기 안내문</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>예방안전과</td>
+                        <td>2024-01-16</td>
+                        <td>397</td>
+                    </tr>
+                    <tr>
+                        <td>2520</td>
+                        <td><a href="#">시민참여형 온실가스 감축 1월 실천과제(음식물쓰레기 다이어트) 알림</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>탄소중립정책과</td>
+                        <td>2024-01-15</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>2519</td>
+                        <td><a href="#">고용노동부, 2024년 설 명절 대비 「임금체불 예방 집중지도기간」 운영(1.15.~2.8.)</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>민생노동정책과</td>
+                        <td>2024-01-15</td>
+                        <td>182</td>
+                    </tr>
+                    <tr>
+                        <td>2518</td>
+                        <td><a href="#">용접·불티로 인한 화재 주의 안내</a></td>
+                        <td><img src="images/ico-ai.png" alt=""></td>
+                        <td>예방안전과</td>
+                        <td>2024-01-16</td>
+                        <td>40</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pageListArea">
+                <a href="#" class="pageFirst"><span class="blind">맨 처음 목록으로 이동</span></a>
+                <a href="#" class="pagePrev"><span class="blind">이전 목록으로 이동</span></a>
+                <ul>
+                    <li><a href="#" class="num">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <a href="#" class="pageNext"><span class="blind">다음 목록으로 이동</span></a>
+                <a href="#" class="pageEnd"><span class="blind">맨 마지막 목록으로 이동</span></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footerBtm">
+        <div class="inner">
+            <div class="footerMenu">
+                <ul>
+                    <li>
+                        <a href="#">약관</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권 보호정책</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보 처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">행정서비스현장</a>
+                    </li>
+                    <li>
+                        <a href="#">홈페이지오류신고</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerMain">
+                <div class="footerLeft">
+                    <div class="footerLogo">
+                        <h1 class="logo">
+                            <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+                        </h1>
+                    </div>
+
+                    <div class="footerTxt">
+                        <p>(우 47545) 부산광역시 연제구 중앙대로 1001(연산동)</p>
+                        <p>Copyright © Busan Metropolitan City. All rights reserved.</p>
+                    </div>
+                    <div class="footerInfo">
+                        <a href="#">시청 찾아오시는 길</a>
+                        <a href="#">주차 안내</a>
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="cell">
+                        <p>부산시 콜센터 <span>051-120</span></p>
+                        <p>평일 08:30 ~ 18:30 야간. 공휴일 당직실 전환</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,768 @@
+@import "common.css";
+
+h2 {
+    font-weight: 800;
+    font-size: 32px;
+    background: linear-gradient(90deg, rgba(3,20,115,1) 0%, rgba(3,140,140,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+main {
+    margin-top: 90px;
+}
+
+
+.sec1 {
+    padding: 40px 0;
+}
+.sec1 .search {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sec1 .search input {
+    width: 550px;
+    height: 45px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #67778C;
+    border-radius: 10px;
+}
+.sec1 .search button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #1B3354;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sec1 .search button:hover {
+    background: #12223a;
+}
+.sec1 .search button img {
+    width: 25px;
+    height: 25px;
+}
+
+.mainArea {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainArea .mainBox {
+    width: 640px;
+    height: 380px;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+}
+
+.mainArea .mainBox .mainBoxTop {
+    height: 280px;
+    padding: 30px 20px 0;
+    text-align: right;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+    background: url("../images/main-top.jpg") no-repeat top / cover;
+}
+.mainArea .mainBox .mainBoxTop:before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: url("../images/main-back.png") no-repeat center/cover;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+    z-index: -5;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mainArea .mainBox .mainBoxTop:after {
+    content: "";
+    display: block;
+    width: 640px;
+    height: 280px;
+    background: url("../images/mayor.png") no-repeat center/ cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.mainArea .mainBox .mainBoxTop p {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.mainArea .mainBox .mainBoxTop strong {
+    font-size: 26px;
+    font-weight: 700;
+    display: block;
+}
+.mainArea .mainBox .mainBoxTop ul {
+    text-align: right;
+    width: 170px;
+    float: right;
+    margin-top: 25px;
+}
+.mainArea .mainBox .mainBoxTop ul li {
+    margin-bottom: 8px;
+}
+.mainArea .mainBox .mainBoxTop ul li a {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #343434;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    width: 170px;
+    height: 35px;
+    background: #fff;
+    border-radius: 20px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #1B3354;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.mainArea .mainBox .mainBoxTop a:hover {
+    color: #fff;
+    background: #1B3354;
+    transition: 0.3s;
+}
+.mainArea .mainBox .mainBoxBottom {
+    display: flex;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxLeft {
+    width: 440px;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxTitle {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxLeft .mainBoxTitle {
+    background: #031473;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxLeft .snsBox {
+    height: 60px;
+    background: #E6E8F1;
+    text-align: center;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxLeft .snsBox li {
+    display: inline-block;
+    margin: 6px 10px;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxLeft .snsBox li a img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxLeft .snsBox li a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxRight {
+    width: 200px;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxRight .mainBoxTitle {
+    background: #038C8C;
+}
+.mainArea .mainBox .mainBoxBottom .mainBoxRight .callCenter {
+    font-size: 34px;
+    font-weight: 900;
+    background: #E6F4F4;
+    text-align: center;
+    line-height: 60px;
+}
+
+.mainArea .mainBanner {
+    width: 640px;
+    height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainArea .mainBanner .arrowArea {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    padding: 6px 14px;
+    background: white;
+    display: flex;
+    border-radius: 15px;
+}
+.mainArea .mainBanner .arrowArea .prev,
+.mainArea .mainBanner .arrowArea .next{
+    cursor: pointer;
+    position: relative;
+
+}
+.mainArea .mainBanner .arrowArea .prev:hover:after,
+.mainArea .mainBanner .arrowArea .next:hover:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainArea .mainBanner .arrowArea .prev:hover:after {
+    background: url("../images/banner-prev-color.png") no-repeat center/cover;
+}
+.mainArea .mainBanner .arrowArea .next:hover:after {
+    background: url("../images/banner-next-color.png") no-repeat center/cover;
+}
+.mainArea .mainBanner .arrowArea .pageCount {
+    margin: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.sec2 {
+    padding: 40px 0 80px;
+    text-align: center;
+}
+.sec2 .title {
+    font-size: 26px;
+    font-weight: 600;
+}
+.sec2 .serviceMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.sec2 .serviceMenu li {
+    width: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sec2 .serviceMenu li a {
+    color: #000;
+    text-decoration: none;
+}
+.sec2 .serviceMenu li a .menuIcon {
+    margin: 0 auto 20px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+.sec2 .serviceMenu li:hover a .menuIcon {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.sec2 .serviceMenu li a .menuIcon:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sec2 .serviceMenu li:hover a .ico1:after {
+    background: url("../images/ico-reservation-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico2:after {
+    background: url("../images/ico-complaints-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico3:after {
+    background: url("../images/ico-traffic-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico4:after {
+    background: url("../images/ico-work-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico5:after {
+    background: url("../images/ico-group-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico6:after {
+    background: url("../images/ico-corona19-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico7:after {
+    background: url("../images/ico-compliment-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico8:after {
+    background: url("../images/ico-pregnancy-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico9:after {
+    background: url("../images/ico-water-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li:hover a .ico10:after {
+    background: url("../images/ico-library-color.png") no-repeat center/cover;
+}
+.sec2 .serviceMenu li a .menuIcon img {
+    width: 100%;
+    height: 100%;
+}
+.sec2 .serviceMenu li a span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+.sec2 .serviceMenu li:hover a span {
+    color:#031473;
+}
+
+.sec3 {
+    background: #E6E8F1;
+    padding: 50px 0;
+    height: 400px;
+}
+.sec3 .inner {
+    position: relative;
+}
+.sec3 .btnBox {
+    position: absolute;
+    bottom: -330px;
+}
+.sec3 .btnBox button {
+    background: none;
+    border: none;
+    display: block;
+    line-height: 32px;
+    margin-top: 10px;
+    color: #67778C;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sec3 .btnBox button:hover {
+    color: #011C40;
+    font-size: 26px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+.sec3 .btnBox button.click {
+    color: #011C40;
+    font-size: 26px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+.sec3 .slideBox {
+    margin-left: 200px;
+    position: absolute;
+    width: 1400px;
+}
+.sec3 .slideBox:after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(3,140,140,0) 0%, rgb(230, 232, 241) 80%);
+}
+.sec3 .slideBox {
+    display: none;
+}
+.sec3 .slideBox1 {
+    display: block;
+}
+.sec3 h2 {
+    margin-bottom: 50px;
+    width: 240px;
+}
+
+.sec3 .slideBox .infoBox a {
+    text-decoration: none;
+    color: #67778C;
+}
+.sec3 .slideBox .infoBox .box {
+    height: 260px;
+    width: 320px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+.sec3 .slideBox .infoBox .box:hover {
+    box-shadow: 0 4px 10px rgba(3, 20, 115, 0.25);
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.sec3 .slideBox .infoBox .box div {
+    font-size: 14px;
+    position: relative;
+}
+.sec3 .slideBox .infoBox .box div strong {
+    font-size: 16px;
+    color: #4F5B9D;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sec3 .slideBox .infoBox .box h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 22px;
+    color: #031473;
+    font-weight: 600;
+    margin: 16px 0 50px;
+    line-height: 1.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.sec3 .slideBox .infoBox .box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.4rem;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    padding:0 30px;
+}
+.sec3 .arrows {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    right: 300px;
+    bottom: -30px;
+}
+.sec3 .prevArrow,
+.sec3 .nextArrow {
+    cursor: pointer;
+    width: 64px;
+    height: 19px;
+    background: url("../images/busan-prev.png") no-repeat center / cover;
+}
+.sec3 .prevArrow {}
+.sec3 .nextArrow {
+    background-image: url("../images/busan-next.png");
+}
+.sec3 .prevArrow:hover:after ,
+.sec3 .nextArrow:hover:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 19px;
+    background: url("../images/busan-prev-color.png") no-repeat center / cover;
+}
+.sec3 .nextArrow:hover:after {
+    background-image: url("../images/busan-next-color.png");
+}
+
+.sec4 {
+    padding: 150px 0;
+}
+.sec4 h2 {
+    text-align: center;
+    margin: 0 auto 50px;
+    width: 240px;
+}
+.sec4 .youtubeWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.sec4 .youtubeWrap .youtubeMain a{
+    display: block;
+    width: 640px;
+    height: 300px;
+    background: url("../images/busan-youtube.png")no-repeat center / cover;
+}
+.sec4 .youtubeWrap .youtubeMain a:hover {
+    background-image: url("../images/busan-youtube-hover.jpg");
+}
+.sec4 .youtubeWrap .youtubeMain img {
+    width: 640px;
+}
+.sec4 .youtubeWrap .youtubeLink {}
+.sec4 .youtubeWrap .youtubeLink .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.sec4 .youtubeWrap .youtubeLink ul {
+    width: 625px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sec4 .youtubeWrap .youtubeLink ul li {
+    width: 195px;
+    height: 109px;
+    overflow: hidden;
+}
+.sec4 .youtubeWrap .youtubeLink ul li a {}
+.sec4 .youtubeWrap .youtubeLink ul li a img {
+    width: 195px;
+    transition: 0.3s;
+}
+.sec4 .youtubeWrap .youtubeLink ul li:hover a img {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.sec5 {
+    margin-bottom: 150px;
+}
+.sec5 h2 {
+    width: 160px;
+    margin-bottom: 120px;
+}
+.sec5 ul {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 80px;
+}
+.sec5 ul:before {
+    content: "";
+    display: block;
+    width: 1500px;
+    height: 488px;
+    border-radius: 40px;
+    background-color: #E6F4F4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    box-shadow: 0 0 20px rgb(230, 244, 244);
+}
+.sec5 ul:after {
+    content: "";
+    display: block;
+    width: 232px;
+    height: 245px;
+    background: url("../images/info-img.png") no-repeat center / cover;
+    position: absolute;
+    right: -50px;
+    bottom: -70px;
+    z-index: -5;
+}
+.sec5 ul li {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+.sec5 ul li a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding-top: 38px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.sec5 ul li a:hover {
+    background-color: #68BABA;;
+    transition: 0.3s;
+    padding-top: 33px;
+}
+.sec5 ul li a:hover .imgBox img{
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+.sec5 ul li a .imgBox {
+    margin-bottom: 12px;
+}
+.sec5 ul li a .imgBox img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.sec6 {
+    padding: 140px 0 600px;
+    position: relative;
+}
+.sec6:after,
+.sec6:before {
+    content: "";
+    width: 100%;
+    height:100%;
+    max-width: 100%;
+    max-height:100%;
+    background: url("../images/tour-back2.png") no-repeat center / cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -99;
+    animation: moveBack1 2s linear infinite;
+}
+.sec6:before {
+    background-image: url("../images/tour-back3.png");
+    animation: moveBack2 2s linear infinite;
+}
+@keyframes moveBack1{
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+@keyframes moveBack2{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.sec6 h2 {
+    margin: 0 auto 100px;
+    width: 340px;
+}
+.sec6 .tourBox {
+    position: relative;
+}
+.sec6 .tourBox ul {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 395px;
+    display: flex;
+    gap: 25px;
+    float: right;
+    position: relative;
+    margin-bottom: 100px;
+}
+.sec6 .tourBox ul:after {
+    content: "";
+    display: block;
+    width: 302px;
+    height: 398px;
+    background: url("../images/tourism-boogie.png") no-repeat center / cover;
+    position: absolute;
+    left: -350px;
+    top: 0;
+}
+.sec6 .tourBox ul li {
+    position: relative;
+    width: 300px;
+    float: left;
+    transition: 0.3s;
+}
+.sec6 .tourBox ul li:hover {
+    margin-top: -20px;
+    transition: 0.3s;
+}
+.sec6 .tourBox ul li .tourImg {
+    height: 248px;
+    position: relative;
+    z-index: 2;
+}
+.sec6 .tourBox ul li .tourImg:after {
+    content: "감천문화마을";
+    display: inline-block;
+    padding: 12px 20px;
+    background: #011C40;
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.sec6 .tourBox ul .list2 .tourImg:after {
+    content: "해운대 해수욕장";
+    background-color: #031473;
+}
+.sec6 .tourBox ul .list3 .tourImg:after {
+    content: "SEA LIFE 부산 아쿠아리움";
+    background-color: #038C8C;
+}
+.sec6 .tourBox ul li .tourImg img {
+    width: 280px;
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+.sec6 .tourBox ul li .tourList {
+    width: 280px;
+    height: 360px;
+    padding: 232px 20px 20px;
+    box-sizing: border-box;
+    background-color: #F2F8FF;
+    border-radius: 20px;
+    border: 1px solid #B6B6B6;
+    position: absolute;
+    top: 30px;
+    right: -5px;
+}
+.sec6 .tourBox ul li .tourList strong {
+    font-weight: 500;
+}
+.sec6 .tourBox ul li .tourList p {
+    font-size: 14px;
+    color: #5B5B5B;
+    line-height: 24px;
+    margin-top: 18px;
+}
+.sec6 .tourBox ul .list2 .tourList {
+    background-color: #F6F8FF;
+}
+.sec6 .tourBox ul .list3 .tourList {
+    height: 382px;
+    background-color: #F2FFFF;
+}
+
+.sec6 .tourBox .add {
+    position: absolute;
+    right: 130px;
+    top: 440px;
+}
+.sec6 .tourBox .add:before {
+    content: "";
+    width: 101px;
+    height: 12px;
+    background: url("../images/tour-arrow.png") no-repeat center/cover;
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rightMove 2.5s infinite linear;
+}
+@keyframes rightMove {
+    0%{
+        left: calc(100% + 10px);
+    }
+    50%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: calc(100% + 10px);
+    }
+}
+.sec6 .tourBox .add a {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #5B5B5B;
+}
+.sec6 .tourBox .add a:hover {
+    text-decoration: underline;
+}

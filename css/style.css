@@ -1,0 +1,815 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
+    color: inherit;
+    text-decoration: none;
+
+    cursor: url(../images/cat-mouse.png) 2 2, auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    transition: all 1s cubic-bezier(0.340, -0.600, 0.515, 1.570);
+
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+h2 {
+    color: #BF6161;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
+}
+h3 {
+    font-size: 24px;
+    color: #581C1C;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
+}
+a,
+p,
+span,
+div {
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0;
+    width: 100vw;
+    z-index: 99;
+}
+header:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 60px;
+    background: url("../images/back.jpg")no-repeat center/100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -99;
+}
+header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+header .logo {
+    transform: rotate(0deg);
+    transition: 1.4s;
+}
+header .logo:hover {
+    transform: rotate(360deg) scale(0.5);
+    transition: 1s;
+}
+header .logo a {
+    display: block;
+    width: 158px;
+    height: 40px;
+    scale: 0.9;
+    background: url("../images/logo1.png") no-repeat center / cover;
+}
+header .menu ul {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+header .menu ul li a:hover {
+    position: relative;
+    display: block;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+header .menu ul li a:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: calc(100% + 4px);
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 2px;
+    position: absolute;
+}
+header .menu ul li a:hover:after {
+    height: 3px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+
+.sec1 {
+    z-index: 999;
+    background: url("../images/back.jpg") repeat center / 60%;
+}
+.sec1 .back {
+    position: relative;
+}
+.sec1 .back * {
+    position: absolute;
+}
+.sec1 .back .circle1 {
+    left: -12%;
+    top: 80px;
+}
+.sec1 .back .circle2 {
+    right: -3%;
+    top: 90px;
+}
+.sec1 .back .catFoot1 {
+    left: 15%;
+    top: 700px;
+    animation: opacity 2s linear infinite;
+}
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sec1 .back .catFoot2 {
+    right: 24%;
+    top: 690px;
+}
+.sec1 .me {
+    position: relative;
+}
+.sec1 .me * {
+    position: absolute;
+}
+.sec1 .me .img{
+    right: -1.8%;
+    top: 40px;
+    transform: scale(0.77);
+}
+.sec1 .me .txt {
+    top: 100px;
+    right: 9%;
+    transform: scale(0.8);
+    animation: opacity 2s linear infinite;
+}
+.sec1 .me .twinkle {
+    top: 200px;
+    right: 3%;
+}
+.sec1 .logoBig {
+    position: absolute;
+    top:  calc(50% - 30px);
+    left: calc(50% - 130px);
+    transform: translate(-50%, -50%);
+}
+.sec1 .logoCat {
+    position: absolute;
+    top:  38%;
+    left: 66%;
+    animation: rotate_image 4s linear infinite;
+}
+@keyframes rotate_image {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+.sec1 .txtRolling {
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    transform: translateY(calc(100vh - 100% - 8px));
+}
+.sec1 .txtBox {
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1.5px;
+
+    animation: move 20s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.sec1 .scroll {
+    width: 38px;
+    height: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: calc(100vh - 150px);
+    transform: translateX(-50%);
+}
+.sec1 .scroll:after {
+    content: "scroll";
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1.5px;
+}
+.sec1 .scroll img {
+    scale: 0.8;
+    animation: scroll 3s ease-in-out infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(10px);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(10px);
+        opacity: 0.4;
+    }
+}
+
+
+
+
+
+
+.cover {
+    position: relative;
+    background: url("../images/back-cat.jpg") no-repeat center / cover fixed;
+}
+.sec2 .inner {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 30px);
+    transform: translate(-50%, -50%);
+}
+.sec2 .aboutMe {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+.sec2 .aboutMe .profileBox .profile {
+    width: 354px;
+    height: 472px;
+    background: url("../images/seolminju2.png") no-repeat center / cover;
+    border: 10px solid #BF6161;
+    border-radius: 50px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.sec2 .aboutMe .profileBox .profile:hover {
+    background-image: url("../images/seolminju3.png");
+    transition: 0.3s;
+}
+.sec2 .aboutMe .profileBox .tag {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 18px;
+}
+.sec2 .aboutMe .profileBox .tag div {
+    animation: itemAni 10s step-start infinite;
+}
+.sec2 .aboutMe .profileBox .tag div:nth-child(2) {
+    animation-delay: 2s;
+}
+.sec2 .aboutMe .profileBox .tag div:nth-child(3) {
+    animation-delay: 4s;
+}
+.sec2 .aboutMe .profileBox .tag div:nth-child(4) {
+    animation-delay: 6s;
+}
+.sec2 .aboutMe .profileBox .tag div:nth-child(5) {
+    animation-delay: 8s;
+}
+@keyframes itemAni {
+    0% {
+        color: #000000;
+    }
+    20% {
+        color: #BF6161;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+
+
+.sec2 .aboutMe .aboutBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .aboutMe .aboutBox .about {
+    margin-bottom: 60px;
+}
+.sec2 .aboutMe .aboutBox .about h2,
+.sec2 .aboutMe .aboutBox .education h2 {
+    margin-bottom: 25px;
+}
+.sec2 .aboutMe .aboutBox .about p,
+.sec2 .aboutMe .aboutBox .education p {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+
+}
+.sec2 .skill {
+    margin-top: 80px;
+}
+.sec2 .skill ul {
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .skill ul li {
+    width: 183px;
+    line-height: 45px;
+    background-color: #BF6161;
+    border: 1px solid #BF6161;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.sec2 .skill ul li:hover {
+    color: #BF6161;
+}
+.sec2 .skill ul li:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 43px;
+    background: #BF6161;
+    color: #BF6161;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.sec2 .skill ul li:hover:after {
+    content: "80%";
+    width: 80%;
+    transition: 0.5s;
+    background: #ffffff;
+}
+
+.sec2 .skill ul li.skill2:hover:after,
+.sec2 .skill ul li.skill5:hover:after {
+    content: "70%";
+    width: 70%;
+}
+.sec2 .skill ul li.skill3:hover:after {
+    content: "90%";
+    width: 90%;
+}
+.sec2 .skill ul li.skill6:hover:after {
+    content: "50%";
+    width: 50%;
+}
+
+
+
+.codingArea {
+    position: relative;
+}
+.codingArea:before {
+    content: "";
+    width: 100vw;
+    height: 380px;
+    position: absolute;
+    top: calc(50% + 70px);
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 0;
+    background: linear-gradient(90deg, rgba(240,219,219,1) 0%, rgba(240, 219, 219, 0.2) 60%);
+}
+.codingArea.sec4:before {
+    background: linear-gradient(90deg, rgba(240, 219, 219, 0.2) 60%, rgba(240,219,219,1) 0% );
+}
+.codingArea h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.codingArea .cloneCoding {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+}
+.codingArea .coding {
+    display: flex;
+    transform: translateX(-50px);
+}
+.codingArea .coding .imgBox.portfolio {
+    width: 968px;
+    height: 496px;
+    position: relative;
+}
+.codingArea .coding .imgBox.portfolio:before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 45px;
+    background: url("../images/mouse-hover.png") no-repeat center / cover;
+    position: absolute;
+    right: 160px;
+    bottom: 120px;
+    z-index: 999;
+    animation: opacity 2s linear infinite;
+}
+.codingArea .coding .imgBox.portfolio .scroll .img:before {
+    content: "";
+    position: absolute;
+    left: 172px;
+    top: 24px;
+    display: block;
+    width: 621px;
+    height: 385px;
+    background: url("../images/cafe1.png") no-repeat top / 100%;
+    transition: 2s;
+}
+.sec5 .coding .imgBox.portfolio .scroll .img:before {
+    background-image: url("../images/busan1.png");
+}
+.codingArea .coding .imgBox.portfolio .scroll:hover .img:before {
+    background-position: bottom;
+    transition: 2s;
+}
+.codingArea .coding .txtBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50px);
+}
+.codingArea .coding .txtBox > div {
+    padding: 50px 40px 40px;
+    position: relative;
+}
+.codingArea .coding .txtBox .title {
+    width: 500px;
+    border-bottom: 1px solid  #BBBBBB;
+    padding-bottom: 20px;
+}
+.codingArea .coding .txtBox .title strong {
+    color: #6A6A6A;
+}
+.codingArea .coding .txtBox ul {
+    padding: 20px 0;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.codingArea .coding .txtBox ul li {
+    line-height: 26px;
+}
+.codingArea .coding .txtBox ul li strong {
+    text-transform: uppercase;
+    width: 51px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.codingArea .coding .txtBox ul li span {
+    color: #6A6A6A;
+    margin-left: 30px;
+}
+.codingArea .coding .txtBox .btn {
+    display: inline-block;
+}
+.codingArea .coding .txtBox .styleBtn {
+    margin-left: 20px;
+}
+.codingArea .coding .txtBox .btn a {
+    display: inline-block;
+    width: 130px;
+    line-height: 30px;
+    background-color: #F0DBDB;
+    border: 1px solid #581C1C;
+    color: #581C1C;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 2px 2px 1px rgba(88, 28, 28, 0.25);
+    transition: 0.3s;
+}
+.codingArea .coding .txtBox .btn a:hover {
+    background-color: #581C1C;
+    color: #fff;
+    transition: 0.3s;
+}
+.codingArea.sec4 .coding {
+    transform: translateX(50px);
+}
+.codingArea.sec4 .coding .txtBox {
+    transform: translateX(100px);
+}
+
+
+
+.sec6 {
+    position: relative;
+    text-align: center;
+}
+.sec6:before,
+.footer:before{
+    content: "";
+    display: inline-block;
+    width: 140%;
+    height: 100px;
+    position: absolute;
+    background-color: #93c492;
+    left: 50%;
+    bottom: -95px;
+    transform: translateX(-50%);
+    border-radius: 30%;
+}
+.sec6 .sns {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+section .backCat {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    animation: moveBack1 30s linear infinite;
+}
+section .backCat img {
+    scale: 0.7;
+    opacity: 0.9;
+}
+@keyframes moveBack1 {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+.sec6 .backCloud1 {
+    position: absolute;
+    left: 13%;
+    top: 16%;
+    animation: moveBack2 5s linear infinite ;
+}
+.sec6 .backCloud2 {
+    position: absolute;
+    right: 13%;
+    top: 20%;
+    animation: moveBack3 5s linear infinite ;
+}
+.sec6 .backCloud3 {
+    position: absolute;
+    left: 4%;
+    top: 46%;
+    animation: moveBack2 5s linear infinite ;
+}
+.sec6 .backCloud4 {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    animation: moveBack3 5s linear infinite ;
+}
+@keyframes moveBack2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(70px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveBack3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}
+.sec6 h2 {
+    margin-bottom: 70px;
+}
+.sec6 .imgBox ul {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 0 auto;
+}
+.sec6 .imgBox ul li {
+    background-color: #fff;
+}
+.sec6 .imgBox ul li button {
+    border: none;
+    width: 260px;
+    height: 260px;
+    opacity: 0.5;
+    transition: 0.5s;
+    border-radius: 10px;
+    position: relative;
+    background: url("../images/sns1.png") no-repeat center / cover;
+}
+.sec6 .imgBox ul li button.sns2 {background-image: url("../images/sns2.png")}
+.sec6 .imgBox ul li button.sns3 {background-image: url("../images/sns3.png")}
+.sec6 .imgBox ul li button.sns4 {background-image: url("../images/sns4.png")}
+.sec6 .imgBox ul li button.sns5 {background-image: url("../images/sns5.png")}
+.sec6 .imgBox ul li button.sns6 {background-image: url("../images/sns6.png")}
+
+
+.sec6 .imgBox ul li button:hover {
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+.sec6 .imgBox ul li button:hover:after {
+    content: "";
+    display: inline-block;
+    width: 316px;
+    height: 231px;
+    position: absolute;
+    right: -13px;
+    top: -30px;
+    transition: 0.5s;
+    background: url("../images/choice.png") no-repeat center/ cover;
+}
+
+
+
+.footer {
+    text-align: center;
+    position: relative;
+}
+.footer .inner {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 10px);
+    transform: translate(-50%, -50%);
+}
+.footer h2 {
+    margin-bottom: 40px;
+}
+.footer .footerLogo {
+    margin-bottom: 30px;
+}
+.footer .footerLogo img {
+    scale: 0.8;
+}
+.footer .txt {
+    margin-bottom: 60px;
+}
+.footer .txt p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.footer .info {
+    width: 700px;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+.footer .info span {
+    display: inline-block;
+    position: relative;
+}
+.footer .info span:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer .info.snsInfo {
+    margin-bottom: 20px;
+    background-color: #F5ECBA;
+}
+.footer .info.snsInfo span {
+    padding-left: 45px;
+}
+.footer .info.snsInfo span:before {
+    background: url("../images/kakao.png") no-repeat center / cover;
+}
+.footer .info.emailInfo {
+    background-color: #F0DBDB;
+}
+.footer .info.emailInfo span {
+    padding-left: 49px;
+}
+.footer .info.emailInfo span:before {
+    height: 27px;
+    background: url("../images/email.png") no-repeat center / cover;
+}
+section.footer .backCat:after {
+    content: "본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.";
+    display: block;
+    position: absolute;
+    width: 275px;
+    height: 70px;
+    padding: 20px 25px 0 20px;
+    box-sizing: border-box;
+    transform: translate(-245px, -115px);
+    background: url("../images/talk.png") no-repeat center/cover;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+
+
+
+body.popupOn {
+    overflow: hidden;
+}
+body.popupOn .popupArea {
+    display: block;
+}
+.popupArea {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+}
+.popupArea .snsBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.65);
+    display: none;
+}
+.popupArea .close {
+    width: 30px;
+    height: 30px;
+    background: url("../images/close.png") no-repeat center / cover;
+    transition: 0.3s;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+.popupArea .close:hover {
+    background-image: url("../images/close-color.png");
+    transition: 0.3s;
+}
+
