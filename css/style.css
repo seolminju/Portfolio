@@ -53,6 +53,7 @@ div {
     font-family: 'NanumSquareNeo-Variable', sans-serif;
 }
 
+/* header start */
 header {
     position: fixed;
     top: 0;
@@ -124,8 +125,10 @@ header .menu ul li a:hover:after {
     margin-top: 5px;
     transition: 0.2s;
 }
+/* header end */
 
 
+/* sec1 start */
 .sec1 {
     z-index: 999;
     background: url("../images/back.jpg") repeat center / 60%;
@@ -160,7 +163,6 @@ header .menu ul li a:hover:after {
         opacity: 1;
     }
 }
-
 .sec1 .back .catFoot2 {
     right: 24%;
     top: 690px;
@@ -270,16 +272,17 @@ header .menu ul li a:hover:after {
         opacity: 0.4;
     }
 }
+/* sec1 end */
 
 
-
-
-
-
+/* cover background */
 .cover {
     position: relative;
     background: url("../images/back-cat.jpg") no-repeat center / cover fixed;
 }
+
+
+/* sec2 start */
 .sec2 .inner {
     position: absolute;
     left: 50%;
@@ -337,9 +340,6 @@ header .menu ul li a:hover:after {
         color: #000000;
     }
 }
-
-
-
 .sec2 .aboutMe .aboutBox {
     display: flex;
     justify-content: center;
@@ -357,7 +357,6 @@ header .menu ul li a:hover:after {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
-
 }
 .sec2 .skill {
     margin-top: 80px;
@@ -404,7 +403,6 @@ header .menu ul li a:hover:after {
     transition: 0.5s;
     background: #ffffff;
 }
-
 .sec2 .skill ul li.skill2:hover:after,
 .sec2 .skill ul li.skill5:hover:after {
     content: "70%";
@@ -418,9 +416,10 @@ header .menu ul li a:hover:after {
     content: "50%";
     width: 50%;
 }
+/* sec2 end */
 
 
-
+/* cordingArea start (sec3,4,5) */
 .codingArea {
     position: relative;
 }
@@ -479,9 +478,6 @@ header .menu ul li a:hover:after {
     height: 385px;
     background: url("../images/cafe1.png") no-repeat top / 100%;
     transition: 2s;
-}
-.sec5 .coding .imgBox.portfolio .scroll .img:before {
-    background-image: url("../images/busan1.png");
 }
 .codingArea .coding .imgBox.portfolio .scroll:hover .img:before {
     background-position: bottom;
@@ -547,6 +543,10 @@ header .menu ul li a:hover:after {
     color: #fff;
     transition: 0.3s;
 }
+/* cordingArea end (sec3,4,5) */
+
+
+/* sec4 */
 .codingArea.sec4 .coding {
     transform: translateX(50px);
 }
@@ -555,23 +555,16 @@ header .menu ul li a:hover:after {
 }
 
 
+/* sec5 */
+.codingArea.sec5 .coding .imgBox.portfolio .scroll .img:before {
+    background-image: url("../images/busan1.png");
+}
 
+
+/* sec6 start */
 .sec6 {
     position: relative;
     text-align: center;
-}
-.sec6:before,
-.footer:before{
-    content: "";
-    display: inline-block;
-    width: 140%;
-    height: 100px;
-    position: absolute;
-    background-color: #93c492;
-    left: 50%;
-    bottom: -95px;
-    transform: translateX(-50%);
-    border-radius: 30%;
 }
 .sec6 .sns {
     position: absolute;
@@ -671,8 +664,6 @@ section .backCat img {
 .sec6 .imgBox ul li button.sns4 {background-image: url("../images/sns4.png")}
 .sec6 .imgBox ul li button.sns5 {background-image: url("../images/sns5.png")}
 .sec6 .imgBox ul li button.sns6 {background-image: url("../images/sns6.png")}
-
-
 .sec6 .imgBox ul li button:hover {
     opacity: 1;
     transition: 0.5s;
@@ -689,9 +680,25 @@ section .backCat img {
     transition: 0.5s;
     background: url("../images/choice.png") no-repeat center/ cover;
 }
+/* sec6 end */
 
 
+.sec6:before,
+.footer:before{
+    content: "";
+    display: inline-block;
+    width: 140%;
+    height: 100px;
+    position: absolute;
+    background-color: #93c492;
+    left: 50%;
+    bottom: -95px;
+    transform: translateX(-50%);
+    border-radius: 30%;
+}
 
+
+/* footer start */
 .footer {
     text-align: center;
     position: relative;
@@ -772,10 +779,10 @@ section.footer .backCat:after {
     line-height: 1.2;
     font-size: 14px;
 }
+/* footer end */
 
 
-
-
+/* popup start */
 body.popupOn {
     overflow: hidden;
 }
@@ -812,4 +819,28 @@ body.popupOn .popupArea {
     background-image: url("../images/close-color.png");
     transition: 0.3s;
 }
+/* popup end */
 
+
+/* 디바이스 가로폭 변형 */
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media (min-width:1024px) and (max-width:1279px) {
+    header {
+        background-color: #000;
+    }
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media (min-width:480px) and (max-width:767px) {
+
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media (max-width:479px) {
+
+}

@@ -25,7 +25,7 @@ $(function () {
     snsPopup();
 
     popup.find(".close").on("click", function () {
-        body.removeClass("popupOn");
+        bodyArea.removeClass("popupOn");
         popup.hide();
     });
 
@@ -98,6 +98,7 @@ $(function () {
     //     var posTop = (page-1) * $(window).height();
     //     mHtml.animate({scrollTop : posTop},500);
     // })
+
 
 
 });
