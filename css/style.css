@@ -151,7 +151,6 @@ header .menu ul li a:hover:after {
 .sec1 .left .catFoot1 {
     left: 420px;
     bottom: 40px;
-
     animation: opacity 2s linear infinite;
 }
 @keyframes opacity {
@@ -266,7 +265,6 @@ header .menu ul li a:hover:after {
     position: absolute;
     left: 50%;
     bottom: 40px;
-    /*top: calc(100vh - 150px);*/
     transform: translateX(-50%);
 }
 .sec1 .scroll:after {
@@ -1308,7 +1306,310 @@ body.popupOn .popupArea {
 
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
 @media (min-width:480px) and (max-width:767px) {
+    .inner {
+        width: 470px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .cover {
+        position: relative;
+        background: url("../images/back-cat.jpg") repeat center / 100% fixed;
+    }
+    /*   header   */
+    header {
+        background: green;
+        padding: 10px 0;
+    }
+    header:before {
+        height: 40px;
+    }
+    header .inner {
+        display: inline;
+        justify-content: space-between;
+    }
+    header .logo {
+        display: none;
+    }
+    header .menu ul {
+        font-size: 16px;
+        height: 20px;
+    }
+    /*   sec1   */
 
+    .sec1 .left {
+        left: -400px;
+        top: calc(50% - 20px);
+        transform: translateY(-50%) scale(0.77);
+    }
+    .sec1 .left .catFoot1 {
+        left: 560px;
+        bottom: 250px;
+    }
+    .sec1 .me {
+        top: 30px;
+        right: -130px;
+        transform: translateY(0) scale(0.7);
+    }
+    .sec1 .me:before {
+        left: 0;
+        top: 260px;
+    }
+    .sec1 .me .twinkle {
+        top: 430px;
+        right: 400px;
+    }
+    .sec1 .bigTitle {
+        top: -100px;
+        transform: translateX(-50%) scale(0.5);
+    }
+    .sec1 .txtBox {
+        font-size: 10px;
+    }
+    .sec1 .scroll {
+        transform: translateX(-50%) scale(0.72);
+        bottom: 16px;
+    }
+
+    /*   sec2   */
+    .sec2 .inner {
+        top: 50%;
+    }
+    .sec2 .aboutMe {
+        display: inline;
+        gap: 30px;
+    }
+    .sec2 .aboutMe .profileBox {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .sec2 .aboutMe .profileBox .profile {
+        width: 180px;
+        height: 230px;
+        border-radius: 30px;
+        border: 5px solid #BF6161;
+        margin: 0;
+        background-image: url("../images/seolminju3.png");
+    }
+    .sec2 .aboutMe .profileBox .tag {
+        margin: 20px 0 0;
+        width: 80px;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 15px;
+        justify-content: left;
+    }
+    .sec2 .aboutMe .aboutBox {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .sec2 .aboutMe .aboutBox .about {
+        margin-bottom: 10px;
+    }
+    .sec2 .aboutMe .aboutBox .about h2,
+    .sec2 .aboutMe .aboutBox .education h2 {
+        margin-bottom: 5px;
+    }
+    .sec2 .aboutMe .aboutBox .about p,
+    .sec2 .aboutMe .aboutBox .education p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .sec2 .skill {
+        margin-top: 40px;
+    }
+    .sec2 .skill ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .sec2 .skill ul li {
+        width: 110px;
+        height: 45px;
+        line-height: 18px;
+        background-color: #BF6161;
+        border: 1px solid #BF6161;
+        box-sizing: border-box;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+    }
+    .sec2 .skill ul li:hover {
+        color: #fff;
+    }
+    .sec2 .skill ul li:after {
+        width: 106px;
+        height: 18px;
+        left: 1px;
+        top: 24px;
+        border-radius: 8px;
+        font-size: 12px;
+        color: #BF6161;
+        background: #fff;
+    }
+    .sec2 .skill ul li:before {
+        content: "80%";
+        display: block;
+        width: 80%;
+        height: 18px;
+        background: rgba(191, 97, 97, 0.5);
+        border-radius: 8px;
+        text-align: left;
+        padding-left: 5px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 1px;
+        bottom: 1px;
+        z-index: 99;
+    }
+    .sec2 .skill ul li.skill2:before,
+    .sec2 .skill ul li.skill5:before{
+        content: "70%";
+        width: 70%;
+    }
+    .sec2 .skill ul li.skill3:before{
+        content: "90%";
+        width: 90%;
+    }
+    .sec2 .skill ul li.skill6:before{
+        content: "50%";
+        width: 50%;
+    }
+    .sec2 .skill ul li:hover:after,
+    .sec2 .skill ul li.skill2:hover:after,
+    .sec2 .skill ul li.skill3:hover:after,
+    .sec2 .skill ul li.skill4:hover:after,
+    .sec2 .skill ul li.skill5:hover:after{
+        content: "";
+        width: 106px;
+    }
+    /*   codingArea   */
+    .codingArea:before {
+        height: 230px;
+        top: calc(50% + 40px);
+    }
+    .codingArea h2 {
+        margin-bottom: -100px;
+    }
+    .codingArea .coding {
+        transform: translateY(60px);
+    }
+    .codingArea .coding .imgBox {
+        transform: scale(0.5) translateX(260px);
+    }
+    .codingArea .coding .txtBox {
+        transform: translateX(-265px) scale(0.7);
+    }
+    .codingArea .coding .txtBox .title {
+        width: 480px;
+    }
+    .codingArea .coding .txtBox ul li span {
+        margin-left: 15px;
+    }
+    /*   codingArea.sec3   */
+    .codingArea.sec3 .coding .imgBox {
+        transform: scale(0.5) translateX(290px);
+    }
+    /*   codingArea.sec4   */
+    .codingArea.sec4 .coding {
+        transform: translate(50px, 60px);
+    }
+    .codingArea.sec4 .coding .imgBox {
+        transform: scale(0.5) translateX(-380px);
+    }
+    .codingArea.sec4 .coding .txtBox {
+        transform: translateX(245px) scale(0.7);
+    }
+    /*   codingArea.sec5   */
+    .codingArea.sec5 .coding .txtBox {
+        transform: translateX(-280px) scale(0.7);
+    }
+    /*   sec6   */
+    .sec6 h2 {
+        margin-bottom: 40px;
+    }
+    .sec6 .imgBox ul {
+        width: 600px;
+        justify-content: center;
+        gap: 20px 60px;
+    }
+    .sec6 .imgBox ul li button {
+        width: 160px;
+        height: 160px;
+    }
+    .sec6 .imgBox ul li button:hover:after {
+        width: 250px;
+        height: 182px;
+        left: -34px;
+        top: -22px;
+        z-index: 99999;
+    }
+    .sec6 .backCloud1,
+    .sec6 .backCloud2,
+    .sec6 .backCloud3,
+    .sec6 .backCloud4 {
+        scale: 0.5;
+        z-index: -9;
+    }
+    .sec6 .backCloud1 {left: 3%;}
+    .sec6 .backCloud2 {right: 3%;}
+    .sec6 .backCloud3 {left: -2%;}
+    .sec6 .backCloud4 {right: -2%;}
+    section .backCat {
+        bottom: -44px;
+    }
+    section .backCat img {
+        scale: 0.5;
+    }
+    /*   footer   */
+    .footer .footerLogo {
+        margin: 15px 0;
+    }
+    .footer .footerLogo img {
+        scale: 0.6;
+    }
+    .footer .txt {
+        margin-bottom: 20px;
+    }
+    .footer .txt p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .footer .info {
+        width: 500px;
+        font-size: 14px;
+        line-height: 30px;
+        border-radius: 20px;
+    }
+    .footer .info span:before {
+        width: 26px;
+        height: 26px;
+    }
+    .footer .info.snsInfo span {
+        padding-left: 32px;
+    }
+    .footer .info.emailInfo span {
+        padding-left: 34px;
+    }
+    .footer .info.emailInfo span:before {
+        height: 20px;
+    }
+    section.footer .backCat:after {
+        width: 275px;
+        height: 70px;
+        transform: translate(-245px, -145px);
+        line-height: 1.3;
+        font-size: 14px;
+        scale: 0.8;
+    }
+    /*   popupArea   */
+    .popupArea .snsBox {
+        transform: translate(-50%, -50%) scale(0.3);
+    }
 }
 
 /* 모바일 세로 (해상도 ~ 479px)*/
