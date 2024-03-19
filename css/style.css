@@ -300,7 +300,7 @@ header .menu ul li a:hover:after {
 /* cover background */
 .cover {
     position: relative;
-    background: url("../images/back-cat.jpg") no-repeat center / cover fixed;
+    background: url("../images/back-cat.jpg") repeat center / 100% fixed;
 }
 
 
