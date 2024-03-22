@@ -1440,7 +1440,11 @@ body.popupOn .popupArea {
     }
     /*   popupArea   */
     .popupArea .snsBox {
-        transform: translate(-50%, -50%) scale(0.3);
+        transform: translate(-50%, -50%) scale(0.37);
+    }
+    .popupArea .styleGuideBox {
+        width: 550px;
+        height: 400px;
     }
 }
 
