@@ -857,9 +857,6 @@ body.popupOn .popupArea {
     .inner {
         width: 1200px;
     }
-    header {
-        background: black;
-    }
     section {
         width: 100vw;
         height: 100vh;
@@ -1040,7 +1037,6 @@ body.popupOn .popupArea {
     }
     /*   header   */
     header {
-        background: blue;
         padding: 2px 0;
     }
     header:before {
@@ -1233,11 +1229,10 @@ body.popupOn .popupArea {
         width: 750px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
     /*   header   */
     header {
-        background: orange;
         padding: 3px 0;
     }
     header:before {
@@ -1278,8 +1273,8 @@ body.popupOn .popupArea {
         gap: 20px;
     }
     .sec2 .aboutMe .profileBox .profile {
-        width: 237px;
-        height: 297px;
+        width: 220px;
+        height: 270px;
         border-radius: 30px;
         border: 8px solid #BF6161;
         background-image: url("../images/seolminju3.png");
@@ -1300,8 +1295,8 @@ body.popupOn .popupArea {
     }
     .sec2 .aboutMe .aboutBox .about p,
     .sec2 .aboutMe .aboutBox .education p {
-        font-size: 15px;
-        line-height: 32px;
+        font-size: 14px;
+        line-height: 28px;
     }
     .sec2 .skill {
         margin-top: 30px;
@@ -1309,7 +1304,7 @@ body.popupOn .popupArea {
     .sec2 .skill ul {
         display: flex;
         justify-content: center;
-        gap: 16px;
+        gap: 18px;
     }
     .sec2 .skill ul li {
         width: 100%;
