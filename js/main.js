@@ -3,7 +3,12 @@ $(function () {
     const bodyArea = $("body");
     const popup = $(".popupArea");
     const sns = $("#sec6 .sns .imgBox ul li button");
-    const img = $(".popupArea img.snsBox");
+    const snsBox = $(".popupArea .snsImgBox");
+    const img = $(".popupArea .snsImgBox img.snsBox");
+    const styleBtn1 = $("#sec4 .txtBox .styleBtn button");
+    const styleBtn2 = $("#sec5 .txtBox .styleBtn button");
+    const styleGuide = $(".popupArea .styleGuideBox");
+    const style = $(".popupArea .styleGuideBox img.styleGuide");
 
 
     let scrollH = $(window).scrollTop();
@@ -18,11 +23,36 @@ $(function () {
                     popup.show();
                     img.eq(i).show();
                     img.eq(i).siblings("img").hide();
+                    snsBox.show();
+                    styleGuide.hide();
                 });
+
             }
         }
     }
+
+    function stylePopup() {
+        styleBtn1.on("click", function () {
+            bodyArea.addClass("popupOn");
+            popup.show();
+            style.eq(0).show();
+            style.eq(0).siblings("img").hide();
+            styleGuide.show();
+            snsBox.hide();
+        });
+        styleBtn2.on("click", function () {
+            bodyArea.addClass("popupOn");
+            popup.show();
+            style.eq(1).show();
+            style.eq(1).siblings("img").hide();
+            styleGuide.show();
+            snsBox.hide();
+        });
+    }
+
     snsPopup();
+    stylePopup();
+
 
     popup.find(".close").on("click", function () {
         bodyArea.removeClass("popupOn");
@@ -74,31 +104,5 @@ $(function () {
             });
         });
     };
-
-
-
-    // window.addEventListener("wheel", function (e) {
-    //     e.preventDefault();
-    // }, { passive: false});
-    //
-    // var mHtml = $("html");
-    // var page = 1;
-    //
-    //
-    // mHtml.animate({scrollTop: 0},  10);
-    // $(window).on("wheel", function (e) {
-    //     if (mHtml.is(":animated")) return;
-    //     if (e.originalEvent.deltaY > 0) {
-    //         if (page == 7) return;
-    //         page++;
-    //     } else if (e.originalEvent.deltaY < 0) {
-    //         if (page == 1) return;
-    //         page--;
-    //     }
-    //     var posTop = (page-1) * $(window).height();
-    //     mHtml.animate({scrollTop : posTop},500);
-    // })
-
-
 
 });
