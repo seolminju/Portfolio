@@ -10,9 +10,13 @@ $(function () {
     const styleGuide = $(".popupArea .styleGuideBox");
     const style = $(".popupArea .styleGuideBox img.styleGuide");
 
+    const correctionBtn = $("#sec7 .correction .boxArea li button");
+    const correctionBox = $(".popupArea .correctionBox");
+    const correction = $(".popupArea .correctionBox img.correctionImg");
 
-    let scrollH = $(window).scrollTop();
-    let winH = $(window).innerHeight();
+
+    // let scrollH = $(window).scrollTop();
+    // let winH = $(window).innerHeight();
 
 
     function snsPopup() {
@@ -25,8 +29,8 @@ $(function () {
                     img.eq(i).siblings("img").hide();
                     snsBox.show();
                     styleGuide.hide();
+                    correctionBox.hide();
                 });
-
             }
         }
     }
@@ -39,6 +43,7 @@ $(function () {
             style.eq(0).siblings("img").hide();
             styleGuide.show();
             snsBox.hide();
+                    correctionBox.hide();
         });
         styleBtn2.on("click", function () {
             bodyArea.addClass("popupOn");
@@ -47,17 +52,61 @@ $(function () {
             style.eq(1).siblings("img").hide();
             styleGuide.show();
             snsBox.hide();
+                    correctionBox.hide();
         });
+    }
+
+
+    function correctionPopup() {
+        for (let i = 0; i < correctionBtn.length; i++) {
+            for (let i = 0; i < correction.length; i++) {
+                correctionBtn.eq(i).on("click", function () {
+                    bodyArea.addClass("popupOn");
+                    popup.show();
+                    correction.eq(i).show();
+                    correction.eq(i).siblings("img").hide();
+                    correctionBox.show();
+                    styleGuide.hide();
+                    snsBox.hide();
+                })
+                $("#sec7 .correction .box7 button").on("click", function () {
+                    bodyArea.addClass("popupOn");
+                    popup.show();
+                    correction.eq(6).show();
+                    correction.eq(6).siblings("img").hide();
+                    correctionBox.show();
+                    styleGuide.hide();
+                    snsBox.hide();
+                })
+            }
+        }
     }
 
     snsPopup();
     stylePopup();
+    correctionPopup();
 
 
     popup.find(".close").on("click", function () {
         bodyArea.removeClass("popupOn");
         popup.hide();
     });
+
+
+    const menuIcon = $("header .menu button.menuIcon");
+    const menuClose = $("header .menu button.menuClose");
+    const menuList = $("header .menu ul");
+
+    menuIcon.on("click", function () {
+        menuIcon.hide();
+        menuList.show();
+        menuClose.show();
+    })
+    menuClose.on("click", function () {
+        menuIcon.show();
+        menuList.hide();
+        menuClose.hide();
+    })
 
 
 
